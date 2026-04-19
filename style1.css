@@ -1,0 +1,208 @@
+/* General body settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f2;
+    color: #5a3a2a;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f9e6e2;
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 2px solid #d99ca7;
+
+    
+}
+
+header h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    margin: 0;
+    color: #5a3a2a;
+}
+
+header p {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: 5px;
+    letter-spacing: 2px;
+    color: #5a3a2a;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #f0c4c9;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+
+nav a {
+    color: #5a3a2a;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #d67382;
+    border-bottom: 2px solid #d67382;
+}
+
+/* Sections styling */
+section {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5rem;
+    color: #86071a;
+    margin-bottom: 10px;
+}
+
+/* Paragraph text styling */
+section p {
+    color: #5a3a2a;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Services list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    text-align: left;
+}
+
+ul li {
+    background-color: #db4e76d7;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 20px 25px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    color: #eee7e4;
+}
+
+/* Emoji icon styling in list items */
+ul li::before {
+    content: attr(data-icon);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #f9e6e2;
+    color: #5a3a2a;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 2px solid #d99ca7;
+    margin-top: 40px;
+}
+
+/* Responsive navigation menu */
+@media (max-width: 600px) {
+    nav a {
+        display: none;
+        margin: 10px 0;
+    }
+    ul {
+        max-width: 100%;
+    }
+}
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #fff8f5;
+}
+
+.image-gallery .image-item {
+  flex: 1 1 300px;
+  max-width: 320px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  background-color: #fff;
+}
+
+.image-gallery .image-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.image-gallery .image-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+@media(max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-gallery .image-item {
+    max-width: 90%;
+  }
+}
+
+.empty-div{
+    display: none;
+}
+
+/* Make page take full height/width */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff0f0; /* Use background color similar to image */
+}
+
+/* Harder header area */
+.harder-header {
+    width: 100%;
+    background-color: #d18a94;  /* Harder, solid color for header */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fullscreen background area */
+.fullscreen-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 60px); /* Adjust height after header */
+    background-color: #fff3f2; /* light background */
+}
+
+/* Responsive image */
+.fullscreen-bg img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}

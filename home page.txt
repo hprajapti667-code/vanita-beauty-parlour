@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mom Beauty Parlour</title>
+</head>
+
+<body>
+
+<h1>Mom Beauty Parlour</h1>
+<p>Welcome to our Beauty Parlour</p>
+
+<hr>
+
+<h2>Our Services</h2>
+<ul>
+<li>Eyebrow - ₹20</li>
+<li>Upper Lip - ₹15</li>
+<li>Facial - ₹300</li>
+<li>Hair Cut - ₹150</li>
+<li>Cleanup - ₹200</li>
+</ul>
+
+<hr>
+
+<h2>Gallery</h2>
+<p>Photos will be added here.</p>
+
+<hr>
+
+<h2>Contact Us</h2>
+<p>Phone: 0000000000</p>
+<p>Location: Surat, Gujarat</p>
+
+<hr>
+
+<p>© 2026 Mom Beauty Parlour</p>
+
+</body>
+</html>
